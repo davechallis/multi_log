@@ -10,11 +10,11 @@
 //! extern crate log;
 //! extern crate env_logger;
 //! extern crate simplelog;
-//! extern crate multi_logger;
+//! extern crate multi_log;
 //!
 //! let logger_a = Box::new(env_logger::Builder::from_default_env().build());
 //! let logger_b = simplelog::SimpleLogger::new(log::LevelFilter::Warn, simplelog::Config::default());
-//! multi_logger::MultiLogger::init(vec![logger_a, logger_b], log::Level::Info);
+//! multi_log::MultiLogger::init(vec![logger_a, logger_b], log::Level::Info);
 //! ```
 
 #[cfg_attr(test, macro_use)]

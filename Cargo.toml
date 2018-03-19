@@ -1,0 +1,11 @@
+[package]
+name = "multi_logger"
+version = "0.1.0"
+authors = ["Dave Challis <suicas@gmail.com>"]
+
+[dependencies]
+log = { version = "0.4", features = ["std"] }
+
+[dev-dependencies]
+env_logger = "0.5"
+simplelog = "0.5"

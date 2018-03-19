@@ -1,6 +1,9 @@
 [package]
 name = "multi_logger"
+description = "Logger which passes messages on to any number of other loggers."
 version = "0.1.0"
+keywords = ["logging", "log", "logger"]
+license = "MIT"
 authors = ["Dave Challis <suicas@gmail.com>"]
 
 [dependencies]

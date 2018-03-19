@@ -22,14 +22,14 @@ Logging to all these can then be performed using the `log` crate's macros
     extern crate multi_log;
 
     fn main() {
-		// create a new logger from the `env_logger` crate
+        // create a new logger from the `env_logger` crate
         let logger_a = Box::new(env_logger::Builder::new().filter(None, log::LevelFilter::Info).build());
 
-		// create a new logger from the `simplelog` crate
-		let logger_b = simplelog::SimpleLogger::new(log::LevelFilter::Warn, simplelog::Config::default());
+        // create a new logger from the `simplelog` crate
+        let logger_b = simplelog::SimpleLogger::new(log::LevelFilter::Warn, simplelog::Config::default());
 
-		// wrap them both in a MultiLogger, and initialise as global logger
-		multi_log::MultiLogger::init(vec![logger_a, logger_b], log::Level::Info).unwrap();
+        // wrap them both in a MultiLogger, and initialise as global logger
+        multi_log::MultiLogger::init(vec![logger_a, logger_b], log::Level::Info).unwrap();
 
         warn!("This message should be logged with each logger.");
     }

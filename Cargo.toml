@@ -1,7 +1,7 @@
 [package]
 name = "multi_log"
 description = "Logger which passes messages on to any number of other loggers."
-version = "0.1.0"
+version = "0.1.1"
 repository = "https://github.com/davechallis/multi_log"
 keywords = ["logging", "log", "logger"]
 license = "MIT"
